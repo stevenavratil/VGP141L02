@@ -325,7 +325,6 @@ GameObject:
   - component: {fileID: 318242704}
   - component: {fileID: 318242703}
   - component: {fileID: 318242702}
-  - component: {fileID: 318242705}
   m_Layer: 5
   m_Name: ButtonCapsule
   m_TagString: Untagged
@@ -435,24 +434,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318242700}
   m_CullTransparentMesh: 1
---- !u!114 &318242705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 318242700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9cd71179f1d0b4f881ee74855d9072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnItem: {fileID: 1308127876291489154, guid: 1a0d8bae97072c846bf9c80b83e5fccb, type: 3}
-  spawnLocation: {fileID: 706041702}
-  spawnButton: {fileID: 318242702}
-  currentSlider: {fileID: 568993006}
-  spawnTime: 2
-  isBuilding: 0
 --- !u!1 &484065304
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,7 +536,6 @@ GameObject:
   - component: {fileID: 504181407}
   - component: {fileID: 504181406}
   - component: {fileID: 504181405}
-  - component: {fileID: 504181408}
   m_Layer: 5
   m_Name: ButtonCube
   m_TagString: Untagged
@@ -665,24 +645,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504181403}
   m_CullTransparentMesh: 1
---- !u!114 &504181408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504181403}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9cd71179f1d0b4f881ee74855d9072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnItem: {fileID: 1491925818806244531, guid: 85225fc305a2c344aa36459eab9d12f7, type: 3}
-  spawnLocation: {fileID: 864005096}
-  spawnButton: {fileID: 504181405}
-  currentSlider: {fileID: 1780831100}
-  spawnTime: 4
-  isBuilding: 0
 --- !u!1 &514724330
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,7 +739,7 @@ RectTransform:
   - {fileID: 572845363}
   - {fileID: 557834477}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -971,7 +933,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 572845362}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2017,7 +1979,7 @@ Transform:
   - {fileID: 864005097}
   - {fileID: 1488263401}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1577513546
 GameObject:
@@ -2094,6 +2056,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577513546}
   m_CullTransparentMesh: 1
+--- !u!1 &1620528284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1620528285}
+  - component: {fileID: 1620528286}
+  m_Layer: 5
+  m_Name: Que
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1620528285
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620528284}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 539.5, y: 457.5}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1620528286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620528284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a9cd71179f1d0b4f881ee74855d9072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBuilding: 0
+  spawnCapsuleItem: {fileID: 1308127876291489154, guid: 1a0d8bae97072c846bf9c80b83e5fccb, type: 3}
+  capsuleSpawnLocation: {fileID: 706041702}
+  capsuleSpawnButton: {fileID: 318242702}
+  capsuleSlider: {fileID: 568993006}
+  capsuleSpawnTime: 2
+  spawnCubeItem: {fileID: 1491925818806244531, guid: 85225fc305a2c344aa36459eab9d12f7, type: 3}
+  cubeSpawnLocation: {fileID: 864005096}
+  cubeSpawnButton: {fileID: 504181405}
+  cubeSlider: {fileID: 1780831100}
+  cubeSpawnTime: 4
+  spawnSphereItem: {fileID: 4419395481250413901, guid: c732a40575603f74a85b132015c29c99, type: 3}
+  sphereSpawnLocation: {fileID: 1488263400}
+  sphereSpawnButton: {fileID: 2061746200}
+  sphereSlider: {fileID: 484065306}
+  sphereSpawnTime: 6
 --- !u!1 &1780831098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,7 +2353,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869092932
 GameObject:
@@ -2452,7 +2478,6 @@ GameObject:
   - component: {fileID: 2061746202}
   - component: {fileID: 2061746201}
   - component: {fileID: 2061746200}
-  - component: {fileID: 2061746203}
   m_Layer: 5
   m_Name: ButtonSphere
   m_TagString: Untagged
@@ -2562,21 +2587,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2061746198}
   m_CullTransparentMesh: 1
---- !u!114 &2061746203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061746198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9cd71179f1d0b4f881ee74855d9072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnItem: {fileID: 4419395481250413901, guid: c732a40575603f74a85b132015c29c99, type: 3}
-  spawnLocation: {fileID: 1488263400}
-  spawnButton: {fileID: 2061746200}
-  currentSlider: {fileID: 484065306}
-  spawnTime: 6
-  isBuilding: 0
